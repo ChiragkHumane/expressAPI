@@ -13,9 +13,9 @@ app.post('/', (req, res) => {
   const oddNumbers = [];
   const evenNumbers = [];
   const alphabets = [];
-  let userId, email, rollNumber;
-
-  // Process data array
+  const userId = "john_doe_17091999";
+  const email = "john@xyz.com";
+  const rollNumber = "ABCD123";
   data.forEach(item => {
     if (!isNaN(item)) {
       const number = parseInt(item);
@@ -28,11 +28,9 @@ app.post('/', (req, res) => {
       alphabets.push(item.toUpperCase());
     }
   });
-
-
   res.json({
     is_success: true,
-    user_d:userId,
+    user_id: userId,
     email:email,
     roll_number:rollNumber,
     odd_numbers: oddNumbers,
