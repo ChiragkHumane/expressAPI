@@ -32,12 +32,12 @@ app.post('/', (req, res) => {
 
   res.json({
     is_success: true,
+    user_d:userId,
+    email:email,
+    roll_number:rollNumber,
     odd_numbers: oddNumbers,
     even_numbers: evenNumbers,
-    alphabets,
-    userId,
-    email,
-    rollNumber,
+    alphabets:alphabets,
   });
 });
 
