@@ -29,16 +29,15 @@ app.post('/', (req, res) => {
     }
   });
 
-  // Include optional user data here (if applicable)
 
   res.json({
     is_success: true,
     odd_numbers: oddNumbers,
     even_numbers: evenNumbers,
     alphabets,
-    userId, // Include user ID if applicable
-    email,  // Include email if applicable
-    rollNumber, // Include roll number if applicable
+    userId,
+    email,
+    rollNumber,
   });
 });
 
