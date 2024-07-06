@@ -13,7 +13,7 @@ app.post('/', (req, res) => {
   const oddNumbers = [];
   const evenNumbers = [];
   const alphabets = [];
-  let userId, email, rollNumber; // Optional fields
+  let userId, email, rollNumber;
 
   // Process data array
   data.forEach(item => {
